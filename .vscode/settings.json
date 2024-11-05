@@ -1,0 +1,18 @@
+{
+    "editor.tokenColorCustomizations": {
+   "textMateRules": [
+      {
+         "scope": "comment",
+         "settings": {
+            "foreground": "#808080"  // Gray color for comments
+         }
+      }
+   ]
+},
+// Example in settings.json for custom .model.js icon
+"material-icon-theme.files.associations": {
+   "*.model.js": "database"  // Use "database" icon for Mongoose models
+}
+
+
+}

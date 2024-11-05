@@ -1,0 +1,21 @@
+{
+  "name": "mern_project-main",
+  "version": "1.0.0",
+  "description": "A beginner-friendly MERN stack crash course covering MongoDB, Express, React, and Node.js. Learn to build a full-stack app with CRUD operations, JWT authentication, and responsive UIs using Tailwind CSS. Perfect for beginners looking to gain practical experience with real-world projects.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon backend/server.js"
+  },
+  "type": "module",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "mongoose": "^8.7.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  }
+}
