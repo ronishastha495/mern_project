@@ -39,6 +39,18 @@ app.post("/api/products", async (req,res) => {
     }       
 });
 
+app.put("/api/products/:id", async (req, res) => {
+    const { id } = req.params;
+
+    const product = req.body;
+
+    try {
+        await Product.findByIdAndUpdate(id, product, {new:true});
+    } catch (error) {
+        
+    }
+})
+
 app.delete("/api/products/:id", async (req, res) => {
     const { id } = req.params;
     
@@ -46,7 +58,7 @@ app.delete("/api/products/:id", async (req, res) => {
         await Product.findByIdAndDelete(id);
         res.status(200).json({ success: true, message: "Product deleted" });
     } catch (error) {
-        console.log("error in deleting product:", error.message);
+        console.log("error in deleting product:", error.message);   
         res.status(404).json({ success: false, message: "Product not found"})
         
     }
